@@ -1,0 +1,22 @@
+#
+# secondary segemnts dir initially points to the old data-directory ( segments3 )
+# so that after upgrading from 1.2 the old files are found.
+#
+# You may want to change that to point to directory on the external sd-card
+# where you want to move your datafiles manually, to work around the write-access
+# restrictions on Android 4.4 regarding the external sd-card
+#
+
+secondary_segment_dir=../segments3
+
+#secondary_segment_dir=/storage/external_SD/brouter_segments4
+
+#
+# additional maptool directories must be configured in order to access
+# coordinate-sources from map-tools installed in exotic directories
+#
+# (please note that you may have to place an additional "brouter.redirect"
+# file in the tracks-directory, if there are no write-permissions to write
+# the gpx-tracks there, e.g. on android 4.4)
+
+#additional_maptool_dir=/storage/external_SD/Android/data/net.osmand/files
